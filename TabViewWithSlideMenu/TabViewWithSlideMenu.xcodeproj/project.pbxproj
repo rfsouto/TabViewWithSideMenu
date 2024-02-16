@@ -13,7 +13,6 @@
 		FE3595B42B7ED39E00773395 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3595B32B7ED39E00773395 /* Preview Assets.xcassets */; };
 		FE3595D82B7ED40800773395 /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3595D72B7ED40800773395 /* SlideMenuView.swift */; };
 		FE3595DB2B7ED59E00773395 /* BarOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3595DA2B7ED59E00773395 /* BarOptions.swift */; };
-		FE3595E12B7EE09600773395 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3595E02B7EE09600773395 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		FE3595C32B7ED39E00773395 /* TabViewWithSlideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabViewWithSlideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3595D72B7ED40800773395 /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
 		FE3595DA2B7ED59E00773395 /* BarOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarOptions.swift; sourceTree = "<group>"; };
-		FE3595E02B7EE09600773395 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 		FE3595AB2B7ED39C00773395 /* TabViewWithSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FE3595DF2B7EE08400773395 /* ViewModels */,
 				FE3595D92B7ED59100773395 /* Commons */,
 				FE3595D62B7ED3F500773395 /* Views */,
 				FE3595AC2B7ED39C00773395 /* TabViewWithSlideMenuApp.swift */,
@@ -125,14 +122,6 @@
 				FE3595DA2B7ED59E00773395 /* BarOptions.swift */,
 			);
 			path = Commons;
-			sourceTree = "<group>";
-		};
-		FE3595DF2B7EE08400773395 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				FE3595E02B7EE09600773395 /* ContentViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +258,6 @@
 				FE3595AF2B7ED39C00773395 /* ContentView.swift in Sources */,
 				FE3595AD2B7ED39C00773395 /* TabViewWithSlideMenuApp.swift in Sources */,
 				FE3595D82B7ED40800773395 /* SlideMenuView.swift in Sources */,
-				FE3595E12B7EE09600773395 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @ObservedObject private var viewModel: ContentViewModel = ContentViewModel()
+
+    @State private var isMenuOpen = false
     
     @State private var option: BarOptions = BarOptions.firstTab
     
@@ -58,13 +58,13 @@ struct ContentView: View {
                     .tag(BarOptions.menuButton)
                         .onAppear(){
                             self.option = self.originalOption;
-                            viewModel.isMenuOpen.toggle()
+                            self.isMenuOpen.toggle()
                     }
             }
             SlideMenuView(
                 width: 300,
-                isOpen: viewModel.isMenuOpen,
-                onMenuClose: { viewModel.isMenuOpen.toggle() })
+                isOpen: self.isMenuOpen,
+                onMenuClose: { self.isMenuOpen.toggle() })
         }
     }
 }
